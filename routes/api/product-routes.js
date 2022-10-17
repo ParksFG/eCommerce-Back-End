@@ -29,6 +29,7 @@ router.get('/:id', async (req, res) => {
         through: ProductTag
       }]
     })
+    res.json(singleProductData)
   } catch (err) {
     res.status(400).json(err);
   }
